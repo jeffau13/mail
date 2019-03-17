@@ -4,8 +4,8 @@
   "description": "newsletter app using the mailchimp api",
   "main": "app.js",
   "scripts": {
-    "start" : "node app",
-    "dev" : "nodemon app",
+    "start": "node app",
+    "dev": "nodemon app",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Jeff Au",
@@ -13,6 +13,7 @@
   "dependencies": {
     "body-parser": "^1.18.3",
     "express": "^4.16.4",
+    "pug": "^2.0.3",
     "request": "^2.88.0"
   },
   "devDependencies": {

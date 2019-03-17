@@ -1,0 +1,27 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    meta(http-equiv='X-UA-Compatible', content='ie=edge')
+    title Newsletter Signup
+    link(rel='stylesheet', href='css/bootstrap.min.css')
+    link(rel='stylesheet', href='https://use.fontawesome.com/releases/v5.7.2/css/all.css', integrity='sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr', crossorigin='anonymous')
+  body
+    .container
+      section.row.mt-5.text-center
+        .col-md-6.m-auto
+          h1
+            i.fas.fa-newspaper.fa-2x
+          h1.display-4 Newsletter Signup Form
+          p.lead
+            | Enter your info to get our awesome monthly newsletter
+          form(action='/signup', method='POST')
+            .form-group
+              input#first-name.form-control(type='text', name='firstName', placeholder='First Name')
+            .form-group
+              input#last-name.form-control(type='text', name='lastName', placeholder='Last Name')
+            .form-group
+              input#email.form-control(type='email', name='email', placeholder='Email')
+            button.btn.btn-primary.btn-block(type='submit')
+              | Sign Up
