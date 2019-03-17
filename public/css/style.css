@@ -1,0 +1,18 @@
+html {
+  height: 100%;
+  background-size: cover;
+}
+
+body {
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#ca55f7), color-stop(#e777ed), color-stop(#f89ae8), color-stop(#ffbfe9), to(#ffe4f1));
+  background-image: linear-gradient(to right bottom, #ca55f7, #e777ed, #f89ae8, #ffbfe9, #ffe4f1);
+}
+
+.lead {
+  color: black;
+}
+
+h1 {
+  font-size: 3em;
+}
+/*# sourceMappingURL=style.css.map */

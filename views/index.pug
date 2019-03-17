@@ -6,22 +6,29 @@ html(lang='en')
     meta(http-equiv='X-UA-Compatible', content='ie=edge')
     title Newsletter Signup
     link(rel='stylesheet', href='css/bootstrap.min.css')
+    link(rel='stylesheet', href='css/style.css')
     link(rel='stylesheet', href='https://use.fontawesome.com/releases/v5.7.2/css/all.css', integrity='sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr', crossorigin='anonymous')
   body
     .container
       section.row.mt-5.text-center
         .col-md-6.m-auto
-          h1
-            i.fas.fa-newspaper.fa-2x
-          h1.display-4 Newsletter Signup Form
+      
+          h1 Imperial Gems Newsletter
           p.lead
             | Enter your info to get our awesome monthly newsletter
           form(action='/signup', method='POST')
             .form-group
-              input#first-name.form-control(type='text', name='firstName', placeholder='First Name')
+              input#first-name.form-control(type='text', name='firstName', placeholder='First Name', autocomplete='off',required="required")
             .form-group
-              input#last-name.form-control(type='text', name='lastName', placeholder='Last Name')
+              input#last-name.form-control(type='text', name='lastName', placeholder='Last Name', autocomplete='off', required="required")
             .form-group
-              input#email.form-control(type='email', name='email', placeholder='Email')
+              input#last-name.form-control(type='text', name='cityName', placeholder='City (Optional)', autocomplete='off')
+            .form-group
+              input#last-name.form-control(type='text', name='zipCode', placeholder='Zip Code', autocomplete='off', required="required")
+            .form-group
+              input#last-name.form-control(type='text', name='phone', placeholder='Phone # (Optional)', autocomplete='off')
+            .form-group
+              input#email.form-control(type='email', name='email', placeholder='Email', autocomplete='off', required="required")
             button.btn.btn-primary.btn-block(type='submit')
+            
               | Sign Up
