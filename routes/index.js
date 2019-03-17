@@ -2,6 +2,8 @@ var express = require('express');
 const validator = require('validator');
 var router = express.Router();
 const request = require('request');
+const config = require('./config')
+
 
 function isEmpty(obj) {
     for (var key in obj) {
@@ -52,9 +54,9 @@ router.post('/signup', (req, res, next) => {
     }
     const postData = JSON.stringify(data);
     //temp info
-    let dc = 'us20';
-    let listId = '6e59d629be';
-    let key = 'dda3c0458c365f63739fc7a3239103af-us20'
+    let dc = config.dc;
+    let listId = config.dc;
+    let key = config.dc;
 
     const options = {
         url: `https://${dc}.api.mailchimp.com/3.0/lists/${listId}`,
